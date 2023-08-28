@@ -14,8 +14,7 @@ This course introduces a WDL workflow that can be used on AnVIL to subset data f
 
 This course will teach learners to:  
 
-- {You can use https://www.bobpikegroup.com/trainer-blog/5-steps-to-writing-clear-and-measurable-learning-objectives to define some learning objectives here}
-- {More learning objectives}
+- Browse Dockstore to find the subsetting workflow- Set up the data subsetting workflow- Check the workflow output
 
 ## Encountering problems?
 

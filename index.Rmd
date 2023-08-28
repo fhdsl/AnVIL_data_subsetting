@@ -31,10 +31,8 @@ Please check out our full collection of AnVIL and related resources: https://hut
 
 # Learning Objectives {-}
 
-<!-- Learning objectives for this activity come from the [Genetics Core Competencies](https://genetics-gsa.org/education/genetics-learning-framework/): -->
+1. Browse the Dockstore repository to find the subsetting workflow
 
-<!-- - Objective 1 -->
-<!-- - Objective 2 -->
-<!-- - Objective 3 -->
+1. Set up the data subsetting workflow
 
-<!-- Please also see the Bioinformatics core competencies for undergraduate life sciences education from NIBLSE: https://journals.plos.org/plosone/article/figure?id=10.1371/journal.pone.0196878.t002 -->
+1. Check the workflow output

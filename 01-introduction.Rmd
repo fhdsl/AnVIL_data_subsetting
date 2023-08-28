@@ -43,3 +43,6 @@ Potential applications of subset genomic files include:
 The AnVIL platform offers a number of advantages compared to institutional servers or other computing resources, such as access to data, integrated tools and pipelines, scalability, and collaboration. Instead of moving data around, users might wish to subset genomic data directly on AnVIL.
 
 We have designed a [WDL](https://openwdl.org/) (pronounced "widdle") workflow that can be run via [Terra on AnVIL](https://anvil.terra.bio/), subsetting `fastq` files prior to the next steps in your analysis or activity.
+
+Check out the next chapter to learn how to run this workflow on AnVIL!
+
