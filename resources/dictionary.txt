@@ -1,4 +1,5 @@
 AnVIL
+AnVIL's
 BiocManager
 bioinformatics
 BIPOC
@@ -37,8 +38,11 @@ px
 reproducibility
 Rmd
 RStudio
+scalability
 timeframe
 underserved
+WDL
+widdle
 Workspaces
 Workspace's
 www
