@@ -2,7 +2,8 @@ book_filename: "AnVIL_Data_Subsetting"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/AnVIL_Data_Subsetting/
 rmd_files: ["index.Rmd",
-            "01-workflow.Rmd",
+            "01-introduction.Rmd",
+            "02-workflow.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
