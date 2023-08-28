@@ -1,0 +1,38 @@
+# User Management
+
+Modules about Groups and user management
+
+<br>
+
+## Create Terra Group
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_terra_group_create.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+## Add Member to Terra Group
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_terra_group_add_member.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+## Find Group Email
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_terra_group_find_email.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
