@@ -64,11 +64,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIdit
 
 Select additional inputs. 
 
-- [**Required**]: In this example, we've selected "sample_id" as the column containing the name of the sample. This helps with naming the file. 
+- **Required**: In this example, we've selected "sample_id" as the column containing the name of the sample. This helps with naming the file. 
 
-- [**Optional**]: "read2" indicates the second set of reads in our paired-end sequencing approach. Skip this if you have single-end reads.
+- *Optional*: "read2" indicates the second set of reads in our paired-end sequencing approach. Skip this if you have single-end reads.
 
-- [**Optional**]: Indicate how many reads you want in your subsample file. In this example, we wanted 20,000 reads. (Default: 10,000)
+- *Optional*: Indicate how many reads you want in your subsample file. In this example, we wanted 20,000 reads. (Default: 10,000)
 
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "", out.width = '100%'}
