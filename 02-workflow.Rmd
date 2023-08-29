@@ -146,3 +146,17 @@ Here is what your output in `stdout` might look like.
 ```{r, fig.align='center', echo = FALSE, fig.alt= "", out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8/edit#slide=id.g2794677b0ab_0_125")
 ```
+
+## Confirming Results in the DATA tab
+
+We can see that the subsample files have been linked in the DATA table "sample".
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8/edit#slide=id.g2794677b0ab_0_139")
+```
+
+We had a mixture of single-end and paired-end reads, so only the paired-end samples get a second file.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8/edit#slide=id.g2794677b0ab_0_139")
+```
