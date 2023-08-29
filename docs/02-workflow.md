@@ -112,3 +112,13 @@ Click on `stdout` and/or `stderr` and "DOWNLOAD" to view the terminal output.
 Here is what your output in `stdout` might look like.
 
 <img src="02-workflow_files/figure-html//1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_125.png" width="100%" style="display: block; margin: auto;" />
+
+## Confirming Results in the DATA tab
+
+We can see that the subsample files have been linked in the DATA table "sample".
+
+<img src="02-workflow_files/figure-html//1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_139.png" width="100%" style="display: block; margin: auto;" />
+
+We had a mixture of single-end and paired-end reads, so only the paired-end samples get a second file.
+
+<img src="02-workflow_files/figure-html//1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_139.png" width="100%" style="display: block; margin: auto;" />
