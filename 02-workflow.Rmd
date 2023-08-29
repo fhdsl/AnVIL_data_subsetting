@@ -17,7 +17,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIdit
 Enter fastq_subsample in the search box. Select the workflow "fhdsl/AnVIL_WDLs/fastq_subsample".
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "", out.width = '100%'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8/edit#slide=id.g2794677b0ab_0_16")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8/edit#slide=id.g2794677b0ab_0_21")
 ```
 
 ## Send the Workflow to AnVIL
