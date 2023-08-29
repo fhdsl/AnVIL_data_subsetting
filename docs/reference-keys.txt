@@ -2,3 +2,14 @@ introduction
 the-anvil-platform
 subsetting-genomic-data
 subsetting-data-on-anvil
+bringing-the-wdl-workflow-to-anvil
+find-the-workflow-on-dockstore
+send-the-workflow-to-anvil
+set-up-the-workflow
+set-up-inputs
+set-up-outputs
+run-the-workflow
+start-the-run
+monitor-the-run
+inspect-the-run-results
+inspecting-other-run-files

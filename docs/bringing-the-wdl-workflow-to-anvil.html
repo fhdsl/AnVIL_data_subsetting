@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>About the Authors | AnVIL Book: Subsetting Your Data with WDL</title>
+  <title>Chapter 2 Bringing the WDL Workflow to AnVIL | AnVIL Book: Subsetting Your Data with WDL</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="About the Authors | AnVIL Book: Subsetting Your Data with WDL" />
+  <meta property="og:title" content="Chapter 2 Bringing the WDL Workflow to AnVIL | AnVIL Book: Subsetting Your Data with WDL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="About the Authors | AnVIL Book: Subsetting Your Data with WDL" />
+  <meta name="twitter:title" content="Chapter 2 Bringing the WDL Workflow to AnVIL | AnVIL Book: Subsetting Your Data with WDL" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="run-the-workflow.html"/>
-
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="set-up-the-workflow.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -148,61 +148,25 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
 </div>
-<div id="about-the-authors" class="section level1 unnumbered">
-<h1>About the Authors</h1>
-<p>These credits are based on our <a href="https://github.com/jhudsl/OTTR_Template/wiki/How-to-give-credits">course contributors table guidelines</a>.</p>
-<p> 
- </p>
-<!-- Authors of AnVIL modules have been listed as Content Contributors, under "AnVIL instructions". -->
-<table>
-<colgroup>
-<col width="58%" />
-<col width="41%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Credits</th>
-<th>Names</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Technical</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Course Publishing Engineer and Maintainer</td>
-<td><a href="https://www.avahoffman.com/">Ava Hoffman</a></td>
-</tr>
-<tr class="odd">
-<td>Template Publishing Engineers</td>
-<td><a href="https://www.cansavvy.com/">Candace Savonen</a>, <a href="https://carriewright11.github.io/">Carrie Wright</a></td>
-</tr>
-<tr class="even">
-<td>Publishing Maintenance Engineer</td>
-<td><a href="https://www.cansavvy.com/">Candace Savonen</a></td>
-</tr>
-<tr class="odd">
-<td>Technical Publishing Stylists</td>
-<td><a href="https://carriewright11.github.io/">Carrie Wright</a>, <a href="https://www.cansavvy.com/">Candace Savonen</a></td>
-</tr>
-<tr class="even">
-<td>Package Developers (<a href="https://github.com/jhudsl/ottrpal">ottrpal</a>)</td>
-<td><a href="https://johnmuschelli.com/">John Muschelli</a>, <a href="https://www.cansavvy.com/">Candace Savonen</a>, <a href="https://carriewright11.github.io/">Carrie Wright</a></td>
-</tr>
-</tbody>
-</table>
-<!-- Author information -->
-<!-- Links -->
-<!-- Fill out this table using these instructions: https://github.com/jhudsl/OTTR_Template/wiki/How-to-give-credits
-
-For JHU courses, You will need to add Ira as a credit:
-
-|Content Publisher|[Ira Gooding]|
-...
-[Ira Gooding]: https://publichealth.jhu.edu/faculty/4130/ira-gooding
--->
-
+<div id="bringing-the-wdl-workflow-to-anvil" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Bringing the WDL Workflow to AnVIL</h1>
+<div id="find-the-workflow-on-dockstore" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Find the Workflow on Dockstore</h2>
+<p>Navigate to the Workflows tab of your Workspace. Select “Find a Workflow”.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_0.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>When the dialog box opens, select “Dockstore” on the bottom left. This will take you to the Dockstore search page.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_5.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Enter fastq_subsample in the search box. Select the workflow “fhdsl/AnVIL_WDLs/fastq_subsample”.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_21.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="send-the-workflow-to-anvil" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Send the Workflow to AnVIL</h2>
+<p>On the right side “Launch with” menu, select “AnVIL”. This will open a new tab.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_26.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Select the appropriate Workspace where you want the workflow to appear. Select “IMPORT”.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_31.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>You should now be back on AnVIL!</p>
+</div>
 </div>
 <hr>
 <center> 
@@ -217,8 +181,8 @@ For JHU courses, You will need to add Ira as a credit:
           </div>
         </div>
       </div>
-<a href="run-the-workflow.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="set-up-the-workflow.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

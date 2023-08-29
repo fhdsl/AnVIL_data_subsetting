@@ -1,6 +1,6 @@
 ---
 title: "AnVIL Book: Subsetting Your Data with WDL"
-date: "August 28, 2023"
+date: "August 29, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -18,10 +18,12 @@ This book is part of a series of books for the Genomic Data Science Analysis, Vi
 ## Skills Level {-} 
 
 ::: {.notice}
-_Genetics_
+_Genetics_  
+
 **Beginner**: some genetics knowledge helpful
 
-_Programming skills_
+_Programming skills_ 
+
 **Novice**: no programming experience needed
 :::
 

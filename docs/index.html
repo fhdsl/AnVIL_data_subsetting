@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2023-08-28" />
+<meta name="date" content="2023-08-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -95,6 +95,23 @@
 <li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#subsetting-genomic-data"><i class="fa fa-check"></i><b>1.2</b> Subsetting Genomic Data</a></li>
 <li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#subsetting-data-on-anvil"><i class="fa fa-check"></i><b>1.3</b> Subsetting Data on AnVIL</a></li>
 </ul></li>
+<li class="chapter" data-level="2" data-path="bringing-the-wdl-workflow-to-anvil.html"><a href="bringing-the-wdl-workflow-to-anvil.html"><i class="fa fa-check"></i><b>2</b> Bringing the WDL Workflow to AnVIL</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="bringing-the-wdl-workflow-to-anvil.html"><a href="bringing-the-wdl-workflow-to-anvil.html#find-the-workflow-on-dockstore"><i class="fa fa-check"></i><b>2.1</b> Find the Workflow on Dockstore</a></li>
+<li class="chapter" data-level="2.2" data-path="bringing-the-wdl-workflow-to-anvil.html"><a href="bringing-the-wdl-workflow-to-anvil.html#send-the-workflow-to-anvil"><i class="fa fa-check"></i><b>2.2</b> Send the Workflow to AnVIL</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="set-up-the-workflow.html"><a href="set-up-the-workflow.html"><i class="fa fa-check"></i><b>3</b> Set Up the Workflow</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="set-up-the-workflow.html"><a href="set-up-the-workflow.html#set-up-inputs"><i class="fa fa-check"></i><b>3.1</b> Set Up Inputs</a></li>
+<li class="chapter" data-level="3.2" data-path="set-up-the-workflow.html"><a href="set-up-the-workflow.html#set-up-outputs"><i class="fa fa-check"></i><b>3.2</b> Set Up Outputs</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="run-the-workflow.html"><a href="run-the-workflow.html"><i class="fa fa-check"></i><b>4</b> Run the Workflow</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="run-the-workflow.html"><a href="run-the-workflow.html#start-the-run"><i class="fa fa-check"></i><b>4.1</b> Start the Run</a></li>
+<li class="chapter" data-level="4.2" data-path="run-the-workflow.html"><a href="run-the-workflow.html#monitor-the-run"><i class="fa fa-check"></i><b>4.2</b> Monitor the Run</a></li>
+<li class="chapter" data-level="4.3" data-path="run-the-workflow.html"><a href="run-the-workflow.html#inspect-the-run-results"><i class="fa fa-check"></i><b>4.3</b> Inspect the Run Results</a></li>
+<li class="chapter" data-level="4.4" data-path="run-the-workflow.html"><a href="run-the-workflow.html#inspecting-other-run-files"><i class="fa fa-check"></i><b>4.4</b> Inspecting Other Run Files</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="divider"></li>
 <p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
@@ -133,7 +150,7 @@
 </div>
 <div id="header">
 <h1 class="title">AnVIL Book: Subsetting Your Data with WDL</h1>
-<p class="date"><em>August 28, 2023</em></p>
+<p class="date"><em>August 29, 2023</em></p>
 </div>
 <div id="about-this-book" class="section level1 unnumbered">
 <h1>About this Book</h1>
@@ -141,10 +158,10 @@
 <div id="skills-level" class="section level2 unnumbered">
 <h2>Skills Level</h2>
 <div class="notice">
-<p><em>Genetics</em>
-<strong>Beginner</strong>: some genetics knowledge helpful</p>
-<p><em>Programming skills</em>
-<strong>Novice</strong>: no programming experience needed</p>
+<p><em>Genetics</em></p>
+<p><strong>Beginner</strong>: some genetics knowledge helpful</p>
+<p><em>Programming skills</em></p>
+<p><strong>Novice</strong>: no programming experience needed</p>
 </div>
 </div>
 <div id="anvil-collection" class="section level2 unnumbered">
