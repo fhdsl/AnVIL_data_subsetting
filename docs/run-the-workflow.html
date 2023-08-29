@@ -86,9 +86,9 @@
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Book</a>
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#skills-level"><i class="fa fa-check"></i>Skills Level</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#learning-objectives"><i class="fa fa-check"></i>Learning Objectives</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#anvil-collection"><i class="fa fa-check"></i>AnVIL Collection</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="learning-objectives.html"><a href="learning-objectives.html"><i class="fa fa-check"></i>Learning Objectives</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#the-anvil-platform"><i class="fa fa-check"></i><b>1.1</b> The AnVIL Platform</a></li>
@@ -153,18 +153,18 @@
 <h1><span class="header-section-number">Chapter 4</span> Run the Workflow</h1>
 <div id="start-the-run" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> Start the Run</h2>
-<p>Once you have saved the inputs and outputs, you should be able to click on RUN ANALYSIS.</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_76.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Once you have saved the inputs and outputs, click on RUN ANALYSIS.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_76.png" title="The RUN ANALYSIS button is highlighted." alt="The RUN ANALYSIS button is highlighted." width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="monitor-the-run" class="section level2" number="4.2">
 <h2><span class="header-section-number">4.2</span> Monitor the Run</h2>
-<p>Navigate to the JOB HISTORY tab. You should be able to select your most recent submissions in table form. Click on the most recent submission. Notice how each sample gets its own job, which keeps the whole process speedy!</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_81.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Navigate to the JOB HISTORY tab. You can see your most recent submissions in table form. Click on the most recent submission. Notice how each sample gets its own job. This keeps the whole process speedy!</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_81.png" title="The page reflects submission IDs and time submitted. Several runs have launched for each sample. The workflow status is 'Running' for all 8 samples." alt="The page reflects submission IDs and time submitted. Several runs have launched for each sample. The workflow status is 'Running' for all 8 samples." width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="inspect-the-run-results" class="section level2" number="4.3">
 <h2><span class="header-section-number">4.3</span> Inspect the Run Results</h2>
-<p>Once the runs are completed, you should see the Status change to “Succeeded” if everything ran correctly.</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_86.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>You should see the status change to “Succeeded” if everything completed correctly.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_86.png" title="Workflow status is now succeeded for all 8 samples, with a check mark." alt="Workflow status is now succeeded for all 8 samples, with a check mark." width="100%" style="display: block; margin: auto;" /></p>
 <div class="notice">
 <p>After 24 hours, you can also see the costs associated with each run under “Run Cost”.</p>
 </div>
@@ -172,20 +172,21 @@
 <div id="inspecting-other-run-files" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Inspecting Other Run Files</h2>
 <p>It can be helpful to look at intermediate files on Google Cloud Platform, especially if runs did not complete successfully. You can view these files by clicking on the folder icon for “Execution directory”.</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_92.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_92.png" title="The folder icon indicating execution directory besides the workflow job for one sample is highlighted." alt="The folder icon indicating execution directory besides the workflow job for one sample is highlighted." width="100%" style="display: block; margin: auto;" /></p>
 <p>For each run, you can see a number of associated files, including the output <code>.fq</code> files and log files.</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_97.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_97.png" title="Files for the workflow on GCP are shown. There are two fastq files that were created as well as 3 log files that are relevant for debugging, including sample_file.log, stderr, and stdout." alt="Files for the workflow on GCP are shown. There are two fastq files that were created as well as 3 log files that are relevant for debugging, including sample_file.log, stderr, and stdout." width="100%" style="display: block; margin: auto;" /></p>
 <p>Click on <code>stdout</code> and/or <code>stderr</code> and “DOWNLOAD” to view the terminal output.</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_109.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_109.png" title="The DOWNLOAD button is highlighted." alt="The DOWNLOAD button is highlighted." width="100%" style="display: block; margin: auto;" /></p>
 <p>Here is what your output in <code>stdout</code> might look like.</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_125.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_125.png" title="Terminal monospace text shows the following: Creating a subsampled file with 20000 lines. Created SRR10152993_1_subsample.fq. Subsampling paired-end reads for SRR10152993. Created SRR10152993_2_subsample.fq." alt="Terminal monospace text shows the following: Creating a subsampled file with 20000 lines. Created SRR10152993_1_subsample.fq. Subsampling paired-end reads for SRR10152993. Created SRR10152993_2_subsample.fq." width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="confirming-results-in-the-data-tab" class="section level2" number="4.5">
 <h2><span class="header-section-number">4.5</span> Confirming Results in the DATA tab</h2>
 <p>We can see that the subsample files have been linked in the DATA table “sample”.</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_139.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>We had a mixture of single-end and paired-end reads, so only the paired-end samples get a second file.</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_139.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_139.png" title="On the DATA tab of the workspace, a new column has been created called read1_subsample. There are 8 files corresponding to each original file." alt="On the DATA tab of the workspace, a new column has been created called read1_subsample. There are 8 files corresponding to each original file." width="100%" style="display: block; margin: auto;" /></p>
+<p>In our example, we have a mixture of single-end and paired-end reads, so only the paired-end samples get a second file.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_144.png" title="On the DATA tab of the workspace, a new column has been created called read2_subsample. There are 4 files corresponding to each original file that had paired-end reads." alt="On the DATA tab of the workspace, a new column has been created called read2_subsample. There are 4 files corresponding to each original file that had paired-end reads." width="100%" style="display: block; margin: auto;" /></p>
+<p>You should now be able to use the subset files for downstream applications!</p>
 
 </div>
 </div>

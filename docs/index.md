@@ -27,14 +27,14 @@ _Programming skills_
 **Novice**: no programming experience needed
 :::
 
+## Learning Objectives {-}
+
+1. Browse the Dockstore repository to find the data subsetting workflow
+
+1. Set up the inputs and outputs for the data subsetting workflow
+
+1. Check the workflow status and output
+
 ## AnVIL Collection {-}
 
 Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
-
-# Learning Objectives {-}
-
-1. Browse the Dockstore repository to find the subsetting workflow
-
-1. Set up the data subsetting workflow
-
-1. Check the workflow output

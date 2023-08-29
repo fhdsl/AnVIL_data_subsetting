@@ -86,9 +86,9 @@
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Book</a>
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#skills-level"><i class="fa fa-check"></i>Skills Level</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#learning-objectives"><i class="fa fa-check"></i>Learning Objectives</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#anvil-collection"><i class="fa fa-check"></i>AnVIL Collection</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="learning-objectives.html"><a href="learning-objectives.html"><i class="fa fa-check"></i>Learning Objectives</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#the-anvil-platform"><i class="fa fa-check"></i><b>1.1</b> The AnVIL Platform</a></li>
@@ -153,31 +153,31 @@
 <h1><span class="header-section-number">Chapter 3</span> Set Up the Workflow</h1>
 <div id="set-up-inputs" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Set Up Inputs</h2>
-<p>Use the “SELECT DATA” button to select the samples (rows) where you want to create fastq subsets. You can select all or some samples.</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_45.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>Columns of your “DATA” table are used as workflow inputs. You need to specify these.</p>
-<p>The first workflow input is a fastq or zipped fastq file. The workflow calls this input <code>fastqgz_file_read_1</code>. Under “Attribute” select the column that contains a link to the first set of reads.</p>
+<p>Use the “SELECT DATA” button to select the samples (rows) you want to subset. You can select all or some samples.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_45.png" title="The workflow setup page on AnVIL has the option to SELECT DATA highlighted." alt="The workflow setup page on AnVIL has the option to SELECT DATA highlighted." width="100%" style="display: block; margin: auto;" /></p>
+<p>Indicate which columns in the DATA tab are used as workflow inputs.</p>
+<p>The first workflow input should be a fastq or zipped fastq file. The workflow calls this input <code>fastqgz_file_read_1</code>. Under “Attribute” select the column that contains a link to the first set of reads.</p>
 <div class="notice">
 <p>For single-end sequencing, the <code>fastqgz_file_read_1</code> input is the only file containing sequencing reads in your data.</p>
 <p>For paired-end sequencing, the <code>fastqgz_file_read_1</code> input is the first of two read files.</p>
 </div>
 <p>In this example, the column with the fastq file link is called “read1”. It will look like “this.read1” under “Attribute”.</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_50.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_50.png" title="The workflow inputs tab shows 4 possible inputs. The first is called 'fastqgz_file_read_1' and should be of the type 'File'. The entry 'this.read' is highlighted from the Attribute dropdown menu." alt="The workflow inputs tab shows 4 possible inputs. The first is called 'fastqgz_file_read_1' and should be of the type 'File'. The entry 'this.read' is highlighted from the Attribute dropdown menu." width="100%" style="display: block; margin: auto;" /></p>
 <p>Select additional inputs.</p>
 <ul>
-<li><p><strong>Required</strong>: In this example, we’ve selected “sample_id” as the column containing the name of the sample. This helps with naming the file.</p></li>
+<li><p><strong>Required</strong>: In this example, we’ve selected “sample_id” as the column containing the name of the sample. This names the output file appropriately.</p></li>
 <li><p><em>Optional</em>: “read2” indicates the second set of reads in our paired-end sequencing approach. Skip this if you have single-end reads.</p></li>
 <li><p><em>Optional</em>: Indicate how many reads you want in your subsample file. In this example, we wanted 20,000 reads. (Default: 10,000)</p></li>
 </ul>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_55.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_55.png" title="The remaining 3 workflow inputs have been populated with Attributes as follows: sample_id is this.sample_id; fastqgz_file_read_2 is this.read2; and n is 20000." alt="The remaining 3 workflow inputs have been populated with Attributes as follows: sample_id is this.sample_id; fastqgz_file_read_2 is this.read2; and n is 20000." width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="set-up-outputs" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Set Up Outputs</h2>
-<p>Workflow outputs are written to a Google Bucket when run on AnVIL. Setting up the workflow outputs allows us to create links to these outputs inside the DATA table in our Workspace, making them easier to locate.</p>
+<p>Workflow outputs are written to a Google Bucket. Setting up the workflow outputs creates links to these outputs inside the DATA in our workspace, making them easier to locate.</p>
 <p>Select the “OUTPUTS” tab. Select “Use defaults” to use the default output column naming schema.</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_60.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_60.png" title="On the outputs tab of the workflow setup is highlighted. Use defaults option is highlighted. The two outputs, read1_subsample and read2_subsample are set to the default values under attributes. These are 'this.read1_subsample' and 'this.read2_subsample'." alt="On the outputs tab of the workflow setup is highlighted. Use defaults option is highlighted. The two outputs, read1_subsample and read2_subsample are set to the default values under attributes. These are 'this.read1_subsample' and 'this.read2_subsample'." width="100%" style="display: block; margin: auto;" /></p>
 <p>Click “SAVE”.</p>
-<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_66.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_66.png" title="The SAVE button for workflow inputs and outputs is highlighted." alt="The SAVE button for workflow inputs and outputs is highlighted." width="100%" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <hr>
