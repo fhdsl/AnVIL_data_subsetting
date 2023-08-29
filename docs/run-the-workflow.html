@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>About the Authors | AnVIL Book: Subsetting Your Data with WDL</title>
+  <title>Chapter 4 Run the Workflow | AnVIL Book: Subsetting Your Data with WDL</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="About the Authors | AnVIL Book: Subsetting Your Data with WDL" />
+  <meta property="og:title" content="Chapter 4 Run the Workflow | AnVIL Book: Subsetting Your Data with WDL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="About the Authors | AnVIL Book: Subsetting Your Data with WDL" />
+  <meta name="twitter:title" content="Chapter 4 Run the Workflow | AnVIL Book: Subsetting Your Data with WDL" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="run-the-workflow.html"/>
-
+<link rel="prev" href="set-up-the-workflow.html"/>
+<link rel="next" href="about-the-authors.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -149,61 +149,45 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
 </div>
-<div id="about-the-authors" class="section level1 unnumbered">
-<h1>About the Authors</h1>
-<p>These credits are based on our <a href="https://github.com/jhudsl/OTTR_Template/wiki/How-to-give-credits">course contributors table guidelines</a>.</p>
-<p> 
- </p>
-<!-- Authors of AnVIL modules have been listed as Content Contributors, under "AnVIL instructions". -->
-<table>
-<colgroup>
-<col width="58%" />
-<col width="41%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Credits</th>
-<th>Names</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Technical</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Course Publishing Engineer and Maintainer</td>
-<td><a href="https://www.avahoffman.com/">Ava Hoffman</a></td>
-</tr>
-<tr class="odd">
-<td>Template Publishing Engineers</td>
-<td><a href="https://www.cansavvy.com/">Candace Savonen</a>, <a href="https://carriewright11.github.io/">Carrie Wright</a></td>
-</tr>
-<tr class="even">
-<td>Publishing Maintenance Engineer</td>
-<td><a href="https://www.cansavvy.com/">Candace Savonen</a></td>
-</tr>
-<tr class="odd">
-<td>Technical Publishing Stylists</td>
-<td><a href="https://carriewright11.github.io/">Carrie Wright</a>, <a href="https://www.cansavvy.com/">Candace Savonen</a></td>
-</tr>
-<tr class="even">
-<td>Package Developers (<a href="https://github.com/jhudsl/ottrpal">ottrpal</a>)</td>
-<td><a href="https://johnmuschelli.com/">John Muschelli</a>, <a href="https://www.cansavvy.com/">Candace Savonen</a>, <a href="https://carriewright11.github.io/">Carrie Wright</a></td>
-</tr>
-</tbody>
-</table>
-<!-- Author information -->
-<!-- Links -->
-<!-- Fill out this table using these instructions: https://github.com/jhudsl/OTTR_Template/wiki/How-to-give-credits
+<div id="run-the-workflow" class="section level1" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Run the Workflow</h1>
+<div id="start-the-run" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Start the Run</h2>
+<p>Once you have saved the inputs and outputs, you should be able to click on RUN ANALYSIS.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_76.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="monitor-the-run" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Monitor the Run</h2>
+<p>Navigate to the JOB HISTORY tab. You should be able to select your most recent submissions in table form. Click on the most recent submission. Notice how each sample gets its own job, which keeps the whole process speedy!</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_81.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="inspect-the-run-results" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Inspect the Run Results</h2>
+<p>Once the runs are completed, you should see the Status change to “Succeeded” if everything ran correctly.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_86.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="notice">
+<p>After 24 hours, you can also see the costs associated with each run under “Run Cost”.</p>
+</div>
+</div>
+<div id="inspecting-other-run-files" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Inspecting Other Run Files</h2>
+<p>It can be helpful to look at intermediate files on Google Cloud Platform, especially if runs did not complete successfully. You can view these files by clicking on the folder icon for “Execution directory”.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_92.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>For each run, you can see a number of associated files, including the output <code>.fq</code> files and log files.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_97.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Click on <code>stdout</code> and/or <code>stderr</code> and “DOWNLOAD” to view the terminal output.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_109.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Here is what your output in <code>stdout</code> might look like.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_125.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="confirming-results-in-the-data-tab" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Confirming Results in the DATA tab</h2>
+<p>We can see that the subsample files have been linked in the DATA table “sample”.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_139.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>We had a mixture of single-end and paired-end reads, so only the paired-end samples get a second file.</p>
+<p><img src="02-workflow_files/figure-html/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8_g2794677b0ab_0_139.png" width="100%" style="display: block; margin: auto;" /></p>
 
-For JHU courses, You will need to add Ira as a credit:
-
-|Content Publisher|[Ira Gooding]|
-...
-[Ira Gooding]: https://publichealth.jhu.edu/faculty/4130/ira-gooding
--->
-
+</div>
 </div>
 <hr>
 <center> 
@@ -218,8 +202,8 @@ For JHU courses, You will need to add Ira as a credit:
           </div>
         </div>
       </div>
-<a href="run-the-workflow.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="set-up-the-workflow.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
