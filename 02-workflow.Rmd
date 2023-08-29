@@ -35,3 +35,41 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIdit
 ```
 
 You should now be back on AnVIL!
+
+# Set Up the Workflow
+
+## Set Up Inputs
+
+Use the "SELECT DATA" button to select the samples (rows) where you want to create fastq subsets. You can select all or some samples.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8/edit#slide=id.g2794677b0ab_0_45")
+```
+
+You need to specify the relevant columns of the "DATA" as inputs to the workflow. The first workflow input, `fastqgz_file_read_1`, should be the read file. This could be the only file containing sequencing reads in your data, or the first of two read files if the sample has paired-end reads.
+
+In this example, the column of the DATA which points to the first read of the fastq file is called "read1". It will look like "this.read1" when selecting this column.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8/edit#slide=id.g2794677b0ab_0_50")
+```
+
+Select additional inputs. 
+
+- [**Required**]: In this example, we've selected "sample_id" as the column containing the name of the sample. This helps with naming the file. 
+- [**Optional**]: "read2" indicates the second set of reads in our paired-end sequencing approach. Skip this if you have single-end reads.
+- [**Optional**]: Indicate how many reads you want in your subsample file. In this example, we wanted 20,000 reads. (Default: 10,000)
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8/edit#slide=id.g2794677b0ab_0_55")
+```
+
+## Set Up Outputs
+
+Workflow outputs are written to a Google Bucket when run on AnVIL. Setting up the workflow outputs allows us to create links to these outputs inside the DATA table in our Workspace, making them easier to locate. 
+
+Select the "OUTPUTS" tab. Select "Use defaults" to use the default output column naming schema. 
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8/edit#slide=id.g2794677b0ab_0_60")
+```
