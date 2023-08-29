@@ -11,7 +11,10 @@ CoV
 customizations
 dex
 dexamethasone
+Dockstore
 dropdown
+fastq
+fhdsl
 GDSCN
 github
 Glimma
