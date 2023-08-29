@@ -112,7 +112,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIdit
 
 ## Inspect the Run Results
 
-You should see the Status change to "Succeeded" if everything completed correctly.
+You should see the status change to "Succeeded" if everything completed correctly.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "", out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8/edit#slide=id.g2794677b0ab_0_86")
@@ -159,7 +159,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIdit
 In our example, we have a mixture of single-end and paired-end reads, so only the paired-end samples get a second file.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "", out.width = '100%'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8/edit#slide=id.g2794677b0ab_0_139")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zUiupDXMZlZEIditsN5igggOim9qIrR9Ckf4N8fSAB8/edit#slide=id.g2794677b0ab_0_144")
 ```
 
 You should now be able to use the subset files for downstream applications!
