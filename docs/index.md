@@ -1,6 +1,6 @@
 ---
-title: "AnVIL Book: Subsetting Your Data with WDL"
-date: "August 29, 2023"
+title: "AnVIL: Subsetting Your Data with WDL"
+date: "August 30, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
