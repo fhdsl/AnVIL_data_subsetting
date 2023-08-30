@@ -1,5 +1,5 @@
 ---
-title: "AnVIL Book: Subsetting Your Data with WDL"
+title: "AnVIL: Subsetting Your Data with WDL"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
